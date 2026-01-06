@@ -16,4 +16,7 @@ main(){
         printf("%3.0f %6.1f\n",f,c);
         f+=step;
     }
+    /*for(f = 0; f<=upper ; f+=20){
+        printf("%3d %6.1f\n",f,(5.0/9.0)*(f - 32));
+    }*/
 }
