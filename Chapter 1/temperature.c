@@ -8,13 +8,13 @@ main(){
     upper = 300;
     step = 20;
 
-    f = lower;
+    f = upper;
 
     printf("Welcome to the Fahrenheit to Celsius converter\n");
-    while(f<=upper){
+    while(f>=lower){
         c = (5.0/9.0)*(f - 32.0);
         printf("%3.0f %6.1f\n",f,c);
-        f+=step;
+        f-=step;
     }
     /*for(f = 0; f<=upper ; f+=20){
         printf("%3d %6.1f\n",f,(5.0/9.0)*(f - 32));
