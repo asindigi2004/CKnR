@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 main(){
-    int f, c;
+    float f, c;
     int lower, upper, step;
 
     lower = 0;
@@ -10,8 +10,8 @@ main(){
 
     f = lower;
     while(f<=upper){
-        c = 5*(f - 32)/9;
-        printf("%d\t%d\n",f,c);
+        c = (5.0/9.0)*(f - 32.0);
+        printf("%3.0f %6.1f\n",f,c);
         f+=step;
     }
 }
